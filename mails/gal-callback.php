@@ -18,12 +18,21 @@
 			$mes     = $_POST['mes'];
 			$product = $_POST['product'];
 
+			$headers = "From: info@garantshkaf.ru\r\n";
+			$headers .= "Reply-To: info@garantshkaf.ru\r\n";
+			$headers .= "Return-Path: info@garantshkaf.ru\r\n";
+			$headers .= "CC: info@garantshkaf.ru\r\n";
+			$headers .= "BCC: info@garantshkaf.ru\r\n";
+			$headers .= "Content-type: text/html; charset=utf-8\r\n";
+
 			mail( "garantshkaf@mail.ru, vasilyev-r@mail.ru", "Расчёт стоимости с сайта гарантшкаф.рф.", 
 				"Объект: " . $product . "\n" .
 				"Потенциальный клиент: " . $name . "\n" .
 				"Телефон: " . $tel . "\n" .
-				"Сообщение: " . $mes
+				"Сообщение: " . $mes,
+				$headers
 			);
+			
 			$_SESSION['win'] = 1;
 			$_SESSION['recaptcha'] = '<p class="text-light">Спасибо за обращение в компанию «ГАРАНТШКАФ». Мы ответим Вам в&#160;ближайшее время.</p>';
 			header("Location: ".$_SERVER['HTTP_REFERER']);
