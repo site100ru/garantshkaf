@@ -335,8 +335,8 @@ include 'header.php';
 <!-- Stock section -->
 <div id="sp-stock"></div>
 <section class="section-stock">
-	<div class="container"
-		style="max-width: 1700px;  padding-top: 80px; padding-bottom: 50px; border-right: 1px solid rgba(153, 153, 153, 0.9);  border-left: 1px solid rgba(153, 153, 153, 0.9);">
+	<div 
+		style="max-width: 1700px; margin: 0 auto; padding-top: 80px; padding-bottom: 50px; border-right: 1px solid rgba(153, 153, 153, 0.9);  border-left: 1px solid rgba(153, 153, 153, 0.9);">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="section-title-wrapper text-md-center">

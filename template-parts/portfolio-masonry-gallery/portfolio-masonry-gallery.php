@@ -77,7 +77,7 @@ if (!empty($category) && $category !== 'all') {
 
 <!-- Portfolio -->
 <section class="portfolio-section archive-portfolio-section-2 <?php echo esc_attr($background_color); ?>">
-    <div class="container" style="max-width: 1700px;  padding-top: 80px; padding-bottom: 50px; border-right: 1px solid rgba(153, 153, 153, 0.9);  border-left: 1px solid rgba(153, 153, 153, 0.9); border-radius: 0px !important">
+    <div style="max-width: 1700px; margin: 0 auto; padding-top: 80px; padding-bottom: 50px; border-right: 1px solid rgba(153, 153, 153, 0.9);  border-left: 1px solid rgba(153, 153, 153, 0.9); border-radius: 0px !important">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -218,8 +218,8 @@ if (!empty($category) && $category !== 'all') {
                     <?php endif; ?>
                 </div>
             </div><!-- .row -->
-        </div>
-    </div><!-- .container -->
+        </div><!-- .container -->
+    </div> 
 </section>
 <!-- /Portfolio -->
 
